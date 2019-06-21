@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fleamarket" />
+        <module name="market-common" />
+        <module name="market-provider-user" />
+        <module name="market-system" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fleamarket" target="1.5" />
+      <module name="market-common" target="1.5" />
+      <module name="market-provider" target="1.5" />
+      <module name="market-provider-user" target="1.7" />
+      <module name="market-system" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
