@@ -11,7 +11,7 @@
         <module name="market-system" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="fleamarket" target="1.5" />
       <module name="market-common" target="1.5" />
       <module name="market-provider" target="1.5" />
