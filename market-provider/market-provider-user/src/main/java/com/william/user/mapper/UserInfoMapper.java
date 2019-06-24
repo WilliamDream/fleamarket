@@ -1,7 +1,10 @@
 package com.william.user.mapper;
 
+import com.william.user.model.dto.UserInfoDto;
 import com.william.user.model.po.UserInfo;
+import com.william.user.model.vo.UserInfoVo;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -15,11 +18,11 @@ import java.util.List;
 public interface UserInfoMapper {
 
 
-    UserInfo getUserByUserId(Integer userId);
+    UserInfoVo getUserByUserId(Integer userId);
 
-    UserInfo getUser(String userName, String passWord);
+    UserInfoVo getUserByUserName(String userName);
 
-    List<UserInfo> getUserList(UserInfo userInfo);
+    List<UserInfoVo> getUserList(UserInfoDto userInfo);
 
 
 }

@@ -1,11 +1,15 @@
 package com.william.user.service.impl;
 
+import com.william.common.bean.ResultVo;
 import com.william.user.mapper.UserInfoMapper;
+import com.william.user.model.dto.UserInfoDto;
 import com.william.user.model.po.UserInfo;
+import com.william.user.model.vo.UserInfoVo;
 import com.william.user.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.xml.transform.Result;
 import java.util.List;
 
 /**
@@ -21,17 +25,26 @@ public class UserInfoServiceImpl implements UserInfoService {
 
 
     @Override
-    public UserInfo getUserByUserId(Integer userId) {
+    public UserInfoVo getUserByUserId(Integer userId) {
         return mapper.getUserByUserId(userId);
     }
 
     @Override
-    public UserInfo getUser(String userName, String passWord) {
-        return mapper.getUser(userName,passWord);
+    public UserInfoVo getUserByUserName(UserInfoDto userInfoDto) {
+
+        if(!userInfoDto.getMsgCode().equals("")){   //验证码错误
+
+        }
+        UserInfoVo userInfoVo = mapper.getUserByUserName(userInfoDto.getUserName());
+        if(userInfoVo==null){   //账号不存在
+
+        }
+
+        return userInfoVo;
     }
 
     @Override
-    public List<UserInfo> getUserList(UserInfo userInfo) {
+    public List<UserInfoVo> getUserList(UserInfoDto userInfo) {
         return mapper.getUserList(userInfo);
     }
 }

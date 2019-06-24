@@ -1,6 +1,8 @@
 package com.william.user.service;
 
+import com.william.user.model.dto.UserInfoDto;
 import com.william.user.model.po.UserInfo;
+import com.william.user.model.vo.UserInfoVo;
 
 import java.util.List;
 
@@ -11,10 +13,10 @@ import java.util.List;
  */
 public interface UserInfoService {
 
-    public UserInfo getUserByUserId(Integer userId);
+    public UserInfoVo getUserByUserId(Integer userId);
 
-    public UserInfo getUser(String userName,String passWord);
+    public UserInfoVo getUserByUserName(UserInfoDto userInfoDto);
 
-    public List<UserInfo> getUserList(UserInfo userInfo);
+    public List<UserInfoVo> getUserList(UserInfoDto userInfo);
 
 }

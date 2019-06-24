@@ -1,13 +1,12 @@
 package com.william.user.controller;
 
 import com.william.common.bean.ResultVo;
+import com.william.user.model.dto.UserInfoDto;
 import com.william.user.model.po.UserInfo;
+import com.william.user.model.vo.UserInfoVo;
 import com.william.user.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Author: WilliamDream
@@ -24,8 +23,14 @@ public class UserInfoCotroller {
 
     @GetMapping("/{userId}")
     public ResultVo getUserById(@PathVariable int userId){
-        UserInfo user = service.getUserByUserId(userId);
-        return ResultVo.success(user);
+        UserInfoVo userInfo = service.getUserByUserId(userId);
+        return ResultVo.success(userInfo);
+    }
+
+    @PostMapping("/login")
+    public ResultVo userLogin(@RequestBody UserInfoDto userInfoDto){
+        UserInfoVo userInfo = service.getUserByUserName(userInfoDto);
+        return ResultVo.success(userInfo);
     }
 
 }
