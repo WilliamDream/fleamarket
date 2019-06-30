@@ -13,10 +13,16 @@ import java.util.List;
  */
 public interface UserInfoService {
 
-    public UserInfoVo getUserByUserId(Integer userId);
+    UserInfoVo getUserByUserId(Integer userId);
 
-    public UserInfoVo getUserByUserName(UserInfoDto userInfoDto);
+    UserInfoVo getUserByUserName(UserInfoDto userInfoDto);
 
-    public List<UserInfoVo> getUserList(UserInfoDto userInfo);
+    List<UserInfoVo> getUserList(UserInfoDto userInfo);
+
+    void addUserInfo(UserInfoDto userInfoDto);
+
+    void updateUserInfo(UserInfoDto userInfoDto);
+
+
 
 }

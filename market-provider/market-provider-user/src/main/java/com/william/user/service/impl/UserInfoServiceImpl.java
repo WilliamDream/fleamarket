@@ -47,4 +47,14 @@ public class UserInfoServiceImpl implements UserInfoService {
     public List<UserInfoVo> getUserList(UserInfoDto userInfo) {
         return mapper.getUserList(userInfo);
     }
+
+    @Override
+    public void addUserInfo(UserInfoDto userInfoDto) {
+        mapper.addUserInfo(userInfoDto);
+    }
+
+    @Override
+    public void updateUserInfo(UserInfoDto userInfoDto) {
+        mapper.updateUserInfo(userInfoDto);
+    }
 }

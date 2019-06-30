@@ -11,5 +11,12 @@ import lombok.Data;
 @Data
 public class UserInfoDto extends UserInfo {
 
+    private Integer userId;
+
+    //用户账号
+    private String userName;
+
+    private String password;
+
     private String msgCode;
 }

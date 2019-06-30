@@ -24,5 +24,9 @@ public interface UserInfoMapper {
 
     List<UserInfoVo> getUserList(UserInfoDto userInfo);
 
+    void addUserInfo(UserInfoDto userInfo);
+
+    void updateUserInfo(UserInfoDto userInfoDto);
+
 
 }
