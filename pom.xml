@@ -15,6 +15,7 @@
         <module>market-provider</module>
         <module>market-provider</module>
         <module>market-provider</module>
+        <module>market-register-eureka</module>
     </modules>
 
 

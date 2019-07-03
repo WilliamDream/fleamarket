@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="market-common" />
         <module name="market-provider-user" />
+        <module name="market-register-eureka" />
         <module name="market-system" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="market-common" target="1.5" />
       <module name="market-provider" target="1.5" />
       <module name="market-provider-user" target="1.7" />
+      <module name="market-register-eureka" target="1.7" />
       <module name="market-system" target="1.5" />
     </bytecodeTargetLevel>
   </component>
