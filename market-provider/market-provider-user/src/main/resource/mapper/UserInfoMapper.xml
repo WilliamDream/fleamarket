@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.william.user.mapper.UserInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.william.user.model.po.UserInfo" >
+
+  </resultMap>
+  
+	<parameterMap id="UserInfoDto" type="com.william.user.model.dto.UserInfoDto"></parameterMap>
+	<resultMap id="UserInfoVo" type="com.william.user.model.vo.UserInfoVo"></resultMap>
+
+  
+	<select id="getUserByUserId" parameterType="Integer" resultType="UserInfoVo">
+		SELECT * FROM d_userinfo WHERE userid = #{userId}
+
+	</select>
+
+	<insert id="addUserInfo" parameterType="UserInfoDto">
+		INSERT INTO d_userinfo() VALUES ()
+
+	</insert>
+  
+  
+</mapper>
