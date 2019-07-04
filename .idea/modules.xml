@@ -4,11 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fleamarket.iml" filepath="$PROJECT_DIR$/fleamarket.iml" />
       <module fileurl="file://$PROJECT_DIR$/market-common/market-common.iml" filepath="$PROJECT_DIR$/market-common/market-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/market-provider/market-provider.iml" filepath="$PROJECT_DIR$/market-provider/market-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/market-provider/market-provider-goods/market-provider-goods.iml" filepath="$PROJECT_DIR$/market-provider/market-provider-goods/market-provider-goods.iml" />
       <module fileurl="file://$PROJECT_DIR$/market-provider/market-provider-user/market-provider-user.iml" filepath="$PROJECT_DIR$/market-provider/market-provider-user/market-provider-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/market-register-eureka/market-register-eureka.iml" filepath="$PROJECT_DIR$/market-register-eureka/market-register-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/market-register-eureka/market-register-eureka.iml" filepath="$PROJECT_DIR$/market-register-eureka/market-register-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/market-system/market-system.iml" filepath="$PROJECT_DIR$/market-system/market-system.iml" />
-      <module fileurl="file://D:\myspace\fleamarket\market-provider\marketprovideruser.iml" filepath="D:\myspace\fleamarket\market-provider\marketprovideruser.iml" />
+      <module fileurl="file://D:/myspace/fleamarket/market-provider/marketprovideruser.iml" filepath="D:/myspace/fleamarket/market-provider/marketprovideruser.iml" />
     </modules>
   </component>
 </project>
