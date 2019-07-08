@@ -12,11 +12,64 @@
         <module>market-common</module>
         <module>market-system</module>
         <module>market-provider</module>
-        <module>market-provider</module>
-        <module>market-provider</module>
-        <module>market-provider</module>
         <module>market-register-eureka</module>
+        <module>market-gateway</module>
     </modules>
 
+    <properties>
+        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-boot.version>2.0.1</spring-boot.version>
+        <junit.version>4.11</junit.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.6</version>
+                <!--<scope>provided</scope>-->
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+
+        </repository>
+
+    </repositories>
 
 </project>

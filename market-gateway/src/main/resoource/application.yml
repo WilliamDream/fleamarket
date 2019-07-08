@@ -1,0 +1,14 @@
+server:
+  servlet:
+    application-display-name: market-gateway
+  port: 8080
+
+spring:
+  application:
+    name: market-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1.com:7001/eureka/
+
+

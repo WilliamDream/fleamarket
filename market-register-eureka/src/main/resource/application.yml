@@ -1,18 +1,64 @@
 server:
   servlet:
-    application-display-name: eureak-server
-  port: 7001
+    application-display-name: market-register-eureak
+  port: 7000
 
 spring:
   application:
-    name: eureka-server
+    name: market-register-eureak
+  profiles: server1
 
 eureka:
   instance:
-    hostname: eureka7001.com                     #服务注册中心实例的主机名
+    hostname: server1.com                     #服务注册中心实例的主机名
   client:
     register-with-eureka: true             #不向服务注册中心注册eureka-server自己
     fetch-registry: true                   #是否检索eureka-server服务，只负责维护注册服务实例
     service-url:                            #注册中心地址
       #defaultZone: http://${eureka.instance.hostname}:7001/eureka/,http://${eureka.instance.hostname}:7002/eureka/,http://${eureka.instance.hostname}:7013/eureka/
-      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7013.com:7013/eureka/
+      defaultZone: http://server2.com:7002/eureka/,http://server3.com:7003/eureka/
+
+---
+server:
+  servlet:
+    application-display-name: market-register-eureak
+  port: 7001
+
+spring:
+  application:
+    name: market-register-eureak
+  profiles: server2
+
+
+eureka:
+  instance:
+    hostname: server2.com                     #服务注册中心实例的主机名
+  client:
+    register-with-eureka: true             #不向服务注册中心注册eureka-server自己
+    fetch-registry: true                   #是否检索eureka-server服务，只负责维护注册服务实例
+    service-url:                            #注册中心地址
+      #defaultZone: http://${eureka.instance.hostname}:7001/eureka/,http://${eureka.instance.hostname}:7002/eureka/,http://${eureka.instance.hostname}:7013/eureka/
+      defaultZone: http://server1.com:7001/eureka/,http://server3.com:7003/eureka/
+
+
+---
+server:
+  servlet:
+    application-display-name: market-register-eureak
+  port: 7002
+
+spring:
+  application:
+    name: market-register-eureak
+  profiles: server3
+
+
+eureka:
+  instance:
+    hostname: server3.com                     #服务注册中心实例的主机名
+  client:
+    register-with-eureka: true             #不向服务注册中心注册eureka-server自己
+    fetch-registry: true                   #是否检索eureka-server服务，只负责维护注册服务实例
+    service-url:                            #注册中心地址
+      #defaultZone: http://${eureka.instance.hostname}:7001/eureka/,http://${eureka.instance.hostname}:7002/eureka/,http://${eureka.instance.hostname}:7013/eureka/
+      defaultZone: http://server1.com:7001/eureka/,http://server2.com:7002/eureka/
