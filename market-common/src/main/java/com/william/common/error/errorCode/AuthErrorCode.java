@@ -18,11 +18,10 @@ public enum AuthErrorCode  implements IErrorCodeEnum {
 		this.errorMsg = errorMsg;
 	}
 	
-	@Override
 	public String getErrorCode() {
 		return errorCode;
 	}
-	@Override
+
 	public String getErrorMsg() {
 		return errorMsg;
 	}
