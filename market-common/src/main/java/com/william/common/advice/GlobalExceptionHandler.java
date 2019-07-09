@@ -1,4 +1,4 @@
-package com.william.common.error;
+package com.william.common.advice;
 
 import com.william.common.bean.ResultVo;
 import com.william.common.error.errorCode.GlobalErrorCode;
