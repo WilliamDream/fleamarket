@@ -14,6 +14,9 @@
         <module>market-provider</module>
         <module>market-register-eureka</module>
         <module>market-gateway</module>
+        <module>market-web</module>
+        <module>market-web</module>
+        <module>market-web</module>
     </modules>
 
     <properties>

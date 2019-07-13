@@ -9,9 +9,11 @@
         <module name="market-common" />
         <module name="market-gateway" />
         <module name="market-provider-goods" />
+        <module name="market-provider-stock" />
         <module name="market-provider-user" />
         <module name="market-register-eureka" />
         <module name="market-system" />
+        <module name="market-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -20,9 +22,13 @@
       <module name="market-gateway" target="1.7" />
       <module name="market-provider" target="1.5" />
       <module name="market-provider-goods" target="1.7" />
+      <module name="market-provider-stock" target="1.7" />
       <module name="market-provider-user" target="1.7" />
       <module name="market-register-eureka" target="1.7" />
+      <module name="market-stock" target="1.5" />
       <module name="market-system" target="1.5" />
+      <module name="market-user" target="1.7" />
+      <module name="market-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
