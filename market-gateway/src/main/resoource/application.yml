@@ -10,5 +10,16 @@ eureka:
   client:
     service-url:
       defaultZone: http://server1.com:7001/eureka/
+zuul:
+  routes:
+    market-user:
+      path: /market/user/**
+      serviceId: Market-Provider-User
+      strip-prefix: false
+    market-goods:
+      path: /market/goods/**
+      serviceId: Market-Provider-Goods
+      strip-prefix: false
+
 
 

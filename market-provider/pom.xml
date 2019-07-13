@@ -16,7 +16,26 @@
         <module>market-provider-goods</module>
     </modules>
 
+    <properties>
+        <spring-cloud-feign.version>1.4.6.RELEASE</spring-cloud-feign.version>
+    </properties>
+
+
     <dependencies>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>${spring-cloud-feign.version}</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

@@ -2,14 +2,22 @@ package com.william.user.model.po;
 
 import lombok.Data;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * @Auther: chaiz
  * @Date: 2019/6/11 19:45
  * @Description:
  */
 @Data
+@Table(name = "d_userinfo")
 public class UserInfo {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
 
     //用户账号
