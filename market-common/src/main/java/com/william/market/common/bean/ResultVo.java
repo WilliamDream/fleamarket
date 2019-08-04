@@ -1,7 +1,7 @@
 package com.william.market.common.bean;
 
 
-import com.william.common.error.errorCode.basics.IErrorCodeEnum;
+import com.william.market.common.error.errorCode.basics.IErrorCodeEnum;
 
 public class ResultVo {
 	/*

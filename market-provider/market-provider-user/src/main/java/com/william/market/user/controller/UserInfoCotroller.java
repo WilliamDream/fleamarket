@@ -1,12 +1,10 @@
 package com.william.market.user.controller;
 
-import com.william.common.bean.ResultVo;
+import com.william.market.common.bean.ResultVo;
 import com.william.market.user.common.constants.Constants;
-import com.william.user.common.constants.Constants;
-import com.william.user.model.dto.UserInfoDto;
-import com.william.user.model.po.UserInfo;
-import com.william.user.model.vo.UserInfoVo;
-import com.william.user.service.UserInfoService;
+import com.william.market.user.model.dto.UserInfoDto;
+import com.william.market.user.model.vo.UserInfoVo;
+import com.william.market.user.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.RequestContextHolder;
