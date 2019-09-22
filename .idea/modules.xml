@@ -12,7 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/market-register-eureka/market-register-eureka.iml" filepath="$PROJECT_DIR$/market-register-eureka/market-register-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/market-provider/market-stock.iml" filepath="$PROJECT_DIR$/market-provider/market-stock.iml" />
       <module fileurl="file://$PROJECT_DIR$/market-system/market-system.iml" filepath="$PROJECT_DIR$/market-system/market-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/market-api/market-user/market-user.iml" filepath="$PROJECT_DIR$/market-api/market-user/market-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/market-api/market-user-api/market-user.iml" filepath="$PROJECT_DIR$/market-api/market-user-api/market-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/market-api/market-web.iml" filepath="$PROJECT_DIR$/market-api/market-web.iml" />
       <module fileurl="file://D:/myspace/fleamarket/market-provider/marketprovideruser.iml" filepath="D:/myspace/fleamarket/market-provider/marketprovideruser.iml" />
     </modules>
